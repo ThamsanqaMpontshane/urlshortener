@@ -34,7 +34,7 @@ app.post('/api/shorturl', function(req, res) {
       short_url: shortUrl
     };
     urlDatabase.push(urlObj);
-    res.json(urlObj);
+    res.send(urlObj);
   }
 })
 
