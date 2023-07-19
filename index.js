@@ -22,7 +22,7 @@ app.get('/api/hello', function(req, res) {
 });
 // My code
 let urlDatabase = [];
-app.post('/api/shorturl', function(req, res) {
+app.get('/api/shorturl', function(req, res) {
   const url = req.body.url;
   let urlRegex = /^https?:\/\/www\./;
   if (!urlRegex.test(url)) {
